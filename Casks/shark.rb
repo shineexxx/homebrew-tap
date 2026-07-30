@@ -7,7 +7,7 @@ cask "shark" do
   desc "File converter and video downloader with bundled ffmpeg and yt-dlp"
   homepage "https://github.com/shineexxx/shark"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: ":sonoma"
 
   app "Shark.app"
 
