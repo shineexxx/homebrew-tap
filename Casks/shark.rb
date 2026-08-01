@@ -7,12 +7,11 @@ cask "shark" do
   desc "File converter and video downloader with bundled ffmpeg and yt-dlp"
   homepage "https://github.com/shineexxx/shark"
 
-  depends_on macos: ">= :sonoma"
-
-  app "Shark.app"
+  depends_on macos: :sonoma
 
   # The command line tool and its manual live inside the bundle, so both are
   # linked from there rather than shipped separately.
+  app "Shark.app"
   binary "#{appdir}/Shark.app/Contents/Helpers/shark"
   manpage "#{appdir}/Shark.app/Contents/Resources/man/man1/shark.1"
 
