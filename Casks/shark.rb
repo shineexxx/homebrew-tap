@@ -23,12 +23,14 @@ cask "shark" do
   ]
 
   caveats <<~EOS
-    Shark is signed ad-hoc, not with an Apple Developer ID, so macOS will
-    refuse to open it on first launch. Either install with
+    Shark is signed ad-hoc rather than with an Apple Developer ID, so macOS
+    blocks it the first time you open it. This is expected and happens once.
 
-      brew install --cask --no-quarantine shark
+      1. Open Shark from Launchpad or Applications. macOS will refuse.
+      2. Go to System Settings -> Privacy & Security, scroll down, and click
+         "Open Anyway" next to Shark.
+      3. Open Shark again and confirm.
 
-    or, after installing, allow it once in
-    System Settings → Privacy & Security.
+    After that it launches normally, and the `shark` command works too.
   EOS
 end

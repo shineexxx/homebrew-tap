@@ -5,7 +5,7 @@ file converter and video downloader.
 
 ```bash
 brew tap shineexxx/tap
-brew install --cask --no-quarantine shark
+brew install --cask shark
 ```
 
 This installs the app into `/Applications`, links the `shark` command and
